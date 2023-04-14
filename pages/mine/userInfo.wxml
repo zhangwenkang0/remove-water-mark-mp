@@ -1,0 +1,9 @@
+<view data-weui-theme="{{theme}}">
+  <form bindsubmit="submit">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}" name="image"></image>
+  </button> 
+      <input type="nickname" name="nickname" class="weui-input" placeholder="请输入昵称"/>
+      <button form-type="submit" class="btn">确认</button>
+  </form>
+</view>

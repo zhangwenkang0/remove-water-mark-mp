@@ -1,0 +1,30 @@
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.container {
+  display: flex;
+}
+
+.btn {
+  float: center;
+  width: 30%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #fff;
+  background: #00c8fd;
+  display: block;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}

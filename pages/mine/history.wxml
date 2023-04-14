@@ -1,0 +1,17 @@
+<view class="no-data" wx:if="{{!list||list.length==0}}">暂无相关信息~</view>
+<view class="container">
+  <view class="scroll-gap"></view>
+  <view class="video-box shadow" wx:for="{{list}}" wx:key="id">
+    <view class="video-btm">
+      <view class="video-title ellipsis" bindtap="Copy_video_info" bindlongpress="Copy_video_info" data-content="{{item.url}}" data-tip="复制成功">{{item.url}}</view>
+    </view>
+    <view class="video-cover" wx:if="{{preview != 0}}">
+      <video class="video-item" src="{{item.no_water_mark_url}}"  wx:if="{{preview != 0 && item.no_water_mark_url!=''}}"></video>
+      <text class="video-date">{{item.updated_at}}</text>
+      <button class="btn-left" bindtap="Copy_video_info" bindlongpress="Copy_video_info" data-content="{{item.url}}" data-tip="视频地址已复制">复制链接</button>
+      <button class="btn-center" data-targeturl="{{item.no_water_mark_url}}" bindtap="postSave">重新下载</button>
+      <button class="btn-right" bindtap="DEL" data-key="{{index}}" data-id="{{item.id}}">删除记录</button>
+    </view>
+  </view>
+  <view class="scroll-gap"></view>
+</view>
