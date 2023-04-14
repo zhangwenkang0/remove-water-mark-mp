@@ -17,5 +17,5 @@
 # 服务器端
 - [短视频去水印小程序源码-服务器端](https://github.com/wyq2214368/remove-water-mark-server)
 
-# 该源码完善及修改自:github源码地址
+# 该源码完善及修改自
 - [短视频去水印小程序源码-小程序端](https://github.com/wyq2214368/remove-water-mark-mp)
